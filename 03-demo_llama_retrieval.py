@@ -27,3 +27,4 @@ response = nodes.retrieve(query)
 
 print("Query response:")
 print(response[4])
+
