@@ -17,13 +17,10 @@ def get_query_engine():
     index = VectorStoreIndex.from_documents(documents)
     return index.as_query_engine()
 
-
-
 # --- STREAMLIT UI ---
 st.title("Bare Bones RAG Chatbot")
 query_engine = get_query_engine()
 prompt = st.chat_input("Ask me  a question...")
-
 
 if prompt:
     st.write(f"User: {prompt}")
